@@ -4,8 +4,7 @@ from pathlib import Path
 # DOCX Support
 from docx import Document
 
-# PDF Support
-import pdfplumber
+
 
 
 class DocumentProcessor:
@@ -13,24 +12,6 @@ class DocumentProcessor:
     def __init__(self, file_path):
         self.file_path = file_path
         self.extension = Path(file_path).suffix.lower()
-
-    # -----------------------------
-    # PDF Extraction
-    # -----------------------------
-    def extract_pdf(self):
-
-        text_parts = []
-
-        with pdfplumber.open(self.file_path) as pdf:
-
-            for page in pdf.pages:
-
-                page_text = page.extract_text()
-
-                if page_text:
-                    text_parts.append(page_text)
-
-        return "\n".join(text_parts)
 
     # -----------------------------
     # DOCX Extraction
@@ -50,22 +31,6 @@ class DocumentProcessor:
 
     # -----------------------------
     # Fix Vertical Text
-    #
-    # Example:
-    #
-    # C
-    # O
-    # R
-    # P
-    # O
-    # R
-    # A
-    # T
-    # E
-    #
-    # ->
-    #
-    # CORPORATE
     # -----------------------------
     def fix_vertical_text(self, text):
 
@@ -127,11 +92,7 @@ class DocumentProcessor:
     # -----------------------------
     def process(self):
 
-        if self.extension == ".pdf":
-
-            raw_text = self.extract_pdf()
-
-        elif self.extension == ".docx":
+        if self.extension == ".docx":
 
             raw_text = self.extract_docx()
 
@@ -154,16 +115,3 @@ if __name__ == "__main__":
     processor = DocumentProcessor(INPUT_FILE)
 
     clean_text = processor.process()
-
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        f.write(clean_text)
-
-    print("=" * 60)
-    print("Document processed successfully")
-    print(f"Output saved to: {OUTPUT_FILE}")
-    print("=" * 60)

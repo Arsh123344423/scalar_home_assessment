@@ -1,0 +1,22 @@
+[
+  {"source": "manual", "type": "PERSON", "text": "Sarthak Malvadkar", "start": 245, "end": 262, "score": 1.0},
+  {"source": "manual", "type": "EMAIL_ADDRESS", "text": "cs.connect@kshinternational.com", "start": 2899, "end": 2930, "score": 1.0},
+  {"source": "manual", "type": "PHONE_NUMBER", "text": "+91 20 4505 3237", "start": 2872, "end": 2889, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Kushal Subbayya Hegde", "start": 680, "end": 702, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Pushpa Kushal Hegde", "start": 704, "end": 723, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Rajesh Kushal Hegde", "start": 725, "end": 744, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Rohit Kushal Hegde", "start": 746, "end": 764, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Rakhi Girija Shetty", "start": 766, "end": 785, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Sandesh Bhagwat", "start": 1250, "end": 1266, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Amod Joshi", "start": 1268, "end": 1279, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Ganesh Prasad", "start": 1290, "end": 1304, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Karunakar N. Bhandary", "start": 1780, "end": 1802, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Narayna B. Shetty", "start": 1810, "end": 1828, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Jayaram N. Shetty", "start": 1830, "end": 1847, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Lokesh Shah", "start": 2250, "end": 2261, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Soumavo Sarkar", "start": 2263, "end": 2278, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Kishan Rastogi", "start": 2350, "end": 2364, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Abhijit Diwan", "start": 2366, "end": 2379, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Shanti Gopalkrishnan", "start": 2450, "end": 2471, "score": 1.0},
+  {"source": "manual", "type": "PERSON", "text": "Lalit Muljibhai Sarvaiya", "start": 2600, "end": 2624, "score": 1.0}
+]
